@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="FileManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyp-a9-QEo">
+                                <rect key="frame" x="246" y="189" width="109" height="30"/>
+                                <state key="normal" title="Documents路径">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getDocumentsPath:" destination="9pv-A4-QxB" eventType="touchUpInside" id="lmC-Oa-wWg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sW-18-xWm">
+                                <rect key="frame" x="272" y="262" width="57" height="30"/>
+                                <state key="normal" title="tmp路径">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getTmpPath:" destination="9pv-A4-QxB" eventType="touchUpInside" id="qvj-wF-hBW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cm-oX-jry">
+                                <rect key="frame" x="259" y="326" width="82" height="30"/>
+                                <state key="normal" title="Caches路径">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCachesPath:" destination="9pv-A4-QxB" eventType="touchUpInside" id="bsm-Zu-aN3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89t-SC-ncF">
+                                <rect key="frame" x="270" y="364" width="60" height="30"/>
+                                <state key="normal" title="遍历目录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enumerating:" destination="9pv-A4-QxB" eventType="touchUpInside" id="fJr-P4-6OM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dyp-a9-QEo" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="169" id="3DR-wY-olm"/>
+                            <constraint firstItem="0sW-18-xWm" firstAttribute="centerX" secondItem="3cm-oX-jry" secondAttribute="centerX" id="EVL-2U-5Zl"/>
+                            <constraint firstItem="3cm-oX-jry" firstAttribute="top" secondItem="0sW-18-xWm" secondAttribute="bottom" constant="34" id="LaX-BW-eZZ"/>
+                            <constraint firstItem="0sW-18-xWm" firstAttribute="top" secondItem="Dyp-a9-QEo" secondAttribute="bottom" constant="43" id="Vu1-Uz-ZfC"/>
+                            <constraint firstItem="0sW-18-xWm" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Wzu-A6-7b8"/>
+                            <constraint firstItem="0sW-18-xWm" firstAttribute="centerX" secondItem="Dyp-a9-QEo" secondAttribute="centerX" id="iJS-dF-7CB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="jal-7i-RFS">
+            <objects>
+                <viewController id="U0e-fd-gdS" customClass="ThirdViewController" customModule="FileManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tuf-cI-KXC"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Ma-Kt-Uyb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b9S-QV-NVC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKV-Y2-Pxi">
+                                <rect key="frame" x="72" y="172" width="456" height="339"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ltk-b9-e4a">
+                                <rect key="frame" x="255" y="134" width="91" height="30"/>
+                                <state key="normal" title="遍历.app目录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enumeratingApp:" destination="U0e-fd-gdS" eventType="touchUpInside" id="1AL-1c-ZU6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Ma-Kt-Uyb" firstAttribute="top" secondItem="eKV-Y2-Pxi" secondAttribute="bottom" constant="40" id="5tf-6J-uOB"/>
+                            <constraint firstItem="eKV-Y2-Pxi" firstAttribute="top" secondItem="Ltk-b9-e4a" secondAttribute="bottom" constant="8" symbolic="YES" id="EfA-yl-mtO"/>
+                            <constraint firstItem="Ltk-b9-e4a" firstAttribute="centerX" secondItem="b9S-QV-NVC" secondAttribute="centerX" id="MNg-S9-iUv"/>
+                            <constraint firstItem="eKV-Y2-Pxi" firstAttribute="leading" secondItem="b9S-QV-NVC" secondAttribute="leadingMargin" constant="56" id="VAl-dK-JP5"/>
+                            <constraint firstItem="Ltk-b9-e4a" firstAttribute="centerX" secondItem="eKV-Y2-Pxi" secondAttribute="centerX" id="X1E-06-ZRe"/>
+                            <constraint firstItem="Ltk-b9-e4a" firstAttribute="top" secondItem="tuf-cI-KXC" secondAttribute="bottom" constant="114" id="jHa-hf-6bJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third" image="first" id="5a0-3m-ASH"/>
+                    <connections>
+                        <outlet property="content" destination="eKV-Y2-Pxi" id="BuS-ba-bdR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7FW-B7-cLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="1057"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="FileManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sfM-ix-tsX">
+                                <rect key="frame" x="206" y="44" width="189" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="mX5-vZ-q6I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFr-Mh-dNg">
+                                <rect key="frame" x="285" y="82" width="30" height="30"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveToDisk:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="zu1-G4-lQv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kax-wE-kxB">
+                                <rect key="frame" x="255" y="254" width="90" height="30"/>
+                                <state key="normal" title="显示文件内容">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayContent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="s0W-iG-iku"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7Y-j8-SGY">
+                                <rect key="frame" x="171" y="292" width="258" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="gT3-06-miH"/>
+                                    <constraint firstAttribute="width" constant="258" id="ygL-zF-CAt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgh-QF-Uo8">
+                                <rect key="frame" x="248" y="120" width="105" height="30"/>
+                                <state key="normal" title="数组写入到文件">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveArryToDisk:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Fze-JL-e8z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7g-WK-3AQ">
+                                <rect key="frame" x="242" y="158" width="117" height="30"/>
+                                <state key="normal" title="在tmp中创建目录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createDirectory:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="YQm-n9-nFQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1w-pI-z9q">
+                                <rect key="frame" x="242" y="196" width="117" height="30"/>
+                                <state key="normal" title="删除tmp中的目录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteDirectory:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="qq7-Yp-ZPA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DFr-Mh-dNg" firstAttribute="centerX" secondItem="sfM-ix-tsX" secondAttribute="centerX" id="4Ja-Kc-ThH"/>
+                            <constraint firstItem="DFr-Mh-dNg" firstAttribute="centerX" secondItem="Kax-wE-kxB" secondAttribute="centerX" id="EZY-dA-c98"/>
+                            <constraint firstItem="DFr-Mh-dNg" firstAttribute="top" secondItem="sfM-ix-tsX" secondAttribute="bottom" constant="8" symbolic="YES" id="Nt9-MV-K8o"/>
+                            <constraint firstItem="sfM-ix-tsX" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="24" id="eu0-Xi-iip"/>
+                            <constraint firstItem="I7Y-j8-SGY" firstAttribute="top" secondItem="Kax-wE-kxB" secondAttribute="bottom" constant="8" symbolic="YES" id="isz-6W-Kto"/>
+                            <constraint firstItem="I7Y-j8-SGY" firstAttribute="centerX" secondItem="Kax-wE-kxB" secondAttribute="centerX" id="kBL-qM-v3o"/>
+                            <constraint firstItem="Kax-wE-kxB" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="keC-U3-SBI"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="I7Y-j8-SGY" secondAttribute="bottom" constant="77" id="vQi-xd-dzh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="content" destination="I7Y-j8-SGY" id="3oq-TR-ogB"/>
+                        <outlet property="textField" destination="sfM-ix-tsX" id="KsU-VX-cBM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="U0e-fd-gdS" kind="relationship" relationship="viewControllers" id="MZY-zP-Qe0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
